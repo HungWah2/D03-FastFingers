@@ -1,0 +1,191 @@
+h1, h2 {
+    text-align: center;
+    font-size: 1.8em;
+    font-family: monospace;
+    padding: 0.7em;
+  }
+  
+  .keyboard {
+      text-align: center;
+      font-size: 14px;
+      font-family: sans-serif;
+  }
+  
+  .keyboard__row {
+      display: inline-block;
+      height: 3em;
+      margin: 0.2em;
+  }
+  
+  .keyboard__row--h1 {
+      height: 1.7em;
+      line-height: 1.4em;
+  }
+  
+  .keyboard__row--h3 {
+      height: 3.3em;
+  }
+  
+  .keyboard__row > * {
+      position: relative;
+      background: #333;
+      text-align: center;
+      color: #eee;
+      float: left;
+      border-radius: 0.3em;
+      margin: 0.2em;
+      padding: 0.2em;
+      width: 3.3em;
+      height: 100%;
+      box-sizing: border-box;
+      cursor: pointer;
+      -webkit-user-select: none;
+      border: 1px solid #444;
+      box-shadow: 0 0.2em 0 0.05em #222;
+      border-bottom-color: #555;
+  }
+  
+  .keyboard__row--h1 > div {
+      width: 3.5em;
+  }
+  
+  .keyboard__row > div[data-pressed],
+  .keyboard__row > div:active {
+      background: #2a2a2a;
+      color: whitesmoke;
+      position: relative;
+      top: 0.2em;
+      box-shadow: 0.5em 0.5em 0.5em 0.5em white;
+  }
+  
+  .key--w3 {
+
+  }
+  
+  .key--w4 {
+      width: 6em;
+  }
+  
+  .key--w5 {
+      width: 6.5em;
+  }
+  
+  .key--w6 {
+      width: 8.3em;
+  }
+
+  .key--w7 {
+    width: 2.8em;
+  }
+  
+  .key--space {
+      width: 18em;
+  }
+  
+  .key--double > * {
+      padding-top: 0.1em;
+  }
+  
+  .key--letter {
+      line-height: 2.8em;
+  }
+  
+  .key--bottom-left > * {
+      position: absolute;
+      text-align: left;
+      bottom: 0.4em;
+      left: 0.4em;
+  }
+  
+  .key--bottom-right > * {
+      position: absolute;
+      text-align: right;
+      bottom: 0.4em;
+      right: 0.4em;
+  }
+  
+  .key--fn > * {
+      font-size: 0.6em;
+      line-height: 1em;
+      padding-top: 1.2em;
+      padding-right: 0.2em;
+      text-align: right;
+      float: right;
+  }
+  
+  .key--word > * {
+      font-size: 0.8em;
+  }
+  
+  .key--arrow--tall > *,
+  .key--arrow > * {
+      font-size: 0.5em;
+      line-height: 3em;
+  }
+  
+  .key--arrow {
+      height: 1.8em;
+      margin-top: 1.7em;
+      line-height: 0.5em;
+  }
+  
+  .key--arrow--tall > * {
+      padding-top: 0.2em;
+  }
+  
+  .keyboard > .keyboard__row {
+      text-align: center;
+  }
+
+  body{
+    background-image: linear-gradient(to right bottom, #ff84cb, #ed8dde, #d897ec, #c1a1f6, #a9a9fb, #90b3ff, #77bcff, #61c4ff, #44d0ff, #2edaf9, #35e4ef, #51ece1);
+  }
+
+.container {
+    padding: 20px;
+    border-radius: 4px;
+    color: hsl(0, 0%, 0%);
+    position: relative;
+    text-align: center;
+    width: 500px;
+    margin-left: 500px;
+  }
+  
+  .start{
+    background: #4e5e73;
+  }
+  input {
+    border: 0;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 300px;
+    padding: 12px 20px;
+    margin-top: 10px;
+    background: #a7c5e3;
+  }
+  
+  .score-container {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+  }
+  
+  .time-container {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+  }
+  
+  .end-game-container {
+    background-color: inherit;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
